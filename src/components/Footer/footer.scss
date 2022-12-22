@@ -1,0 +1,80 @@
+.footer {
+    color: white;
+    bottom: 0;
+    padding-top: 5rem;
+    font-size: 1.5rem;
+    background-color: #2b2a2a ;
+    text-align: center;
+    padding-bottom: 30rem;
+    border-top: 1px solid rgb(158, 157, 157);
+    &__social--icons {         
+        margin-top: 2rem;       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        text-transform: capitalize;
+        height: 5rem;
+        border-bottom: 1px solid rgb(117, 114, 114);
+        padding: 5rem;
+        font-size: 4.5rem;
+        & .icon--insta {
+ 
+             padding: 0.5rem;                 
+             border-radius: 5px;
+             &:hover {
+                 cursor: pointer;
+             }
+        }
+        & .icon--facebook {
+                
+                  padding: 0.5rem;                
+                  border-radius: 5px;
+                  &:hover {
+                    cursor: pointer;
+                  }
+        }
+      
+
+    }
+
+    &__info {
+        font-size: 2rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;      
+        padding-top: 2rem;
+        color: white;
+
+
+        &__item {
+            margin: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--heading {
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+
+            &--para {
+                font-size: 1.4rem;
+                // color: rgb(71, 71, 71);
+                margin: 0.5rem;
+            }
+        }
+    }
+
+
+   
+}
+
+.rights {
+    
+    color: black;
+    padding: 1rem;
+
+}

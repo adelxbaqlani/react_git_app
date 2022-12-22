@@ -1,0 +1,42 @@
+.date_item {
+    // padding: 2rem;
+    // background-color: antiquewhite;
+    // margin: 1rem;
+    // flex-basis: 15rem;
+    // border-radius: 5px;
+    // text-align: center;
+    // font-size: 1.8rem;
+    // font-weight: 700;
+    // transition: all 0.5s;
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    min-width: 10rem;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #505050;
+    border: 1px solid #4e5554;
+    transition: all 0.25s ease;
+    margin: 1rem;
+    
+    &.selected {
+        // border: 1px solid grey;
+        border: 1px rgb(78, 154, 247) solid;
+
+
+        
+    }
+    &.hide {
+        transform: translateX(10rem);         
+        display: none;
+    }
+}

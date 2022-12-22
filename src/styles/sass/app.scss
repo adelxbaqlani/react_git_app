@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ 
+@font-face {
+    // font-family: 'Yekan';
+    font-family: 'Parastoo';
+    font-weight: 500;
+    src: url('../../../public/assets/font/Parastoo.ttf');
+}
+
+html {
+    font-size: 10px; // 1rem = 10px ;
+    direction: rtl;
+    
+}
+
+body {
+    font-size: 16px;
+    // &.blur {
+    //     //filter: blur(5px) !important;
+    //     overflow: hidden !important;
+        
+    // }
+ 
+}
+
+.root {
+   
+}
+
+.container {
+    //  font-family: 'Yekan';
+    position: relative;
+    font-family: 'Parastoo';
+    display: flex;
+    flex-direction: column;
+    // height: 150vh;
+    padding: 0 0rem;
+    .main {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title {
+            font-size: 55px;
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+
+}
+
+$primary-color :#f6ebe7;
+$white-color: #fff;
+$black-color :#000;
+$primary-text-color: rgb(71,
+71,
+71);

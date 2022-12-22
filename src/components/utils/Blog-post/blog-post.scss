@@ -1,0 +1,65 @@
+.blog-post {
+    margin-top: 5rem;
+    min-width: 30rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    //align-items: center;
+    color: #fff;
+    position: relative;
+
+
+    &__img-container {
+        flex: 1;
+        // border: 1px rgba(112, 112, 112, 0.5) solid;
+        // background-color: black;
+        // border-top-left-radius: 3rem;
+        // border-bottom-right-radius: 1rem;
+        &:hover {
+            box-shadow: -18px 3px 16px -5px rgba(0, 0, 0, 0.12);
+        }
+        box-shadow: -18px 3px 16px -5px rgba(0, 0, 0, 0.12);
+    }
+    &__img {
+        // background-image: url("../../imgs/blog-post-1.webp");
+        max-width: 40rem;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 5px;
+ 
+
+        &--1 {
+            background-image: url("../../../imgs/pretty-little-girl.jpg");
+        }
+        &--2 {
+            background-image: url("../../../imgs/blog-post-2.webp");
+        }
+        &--3 {
+            background-image: url("../../../imgs/blog-post-3.webp");
+        }
+        &--4 {
+            background-image: url("../../../imgs/blog-post-4.webp");
+        }
+    }
+    &__date {
+        background-color: rgb(143, 143, 143);
+        position: absolute;
+        bottom: 6rem;
+        right: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    &__title {
+        background-color: rgb(73, 73, 73);
+        padding: 1rem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        margin: 1rem;
+        min-width: 80%;
+    }
+}

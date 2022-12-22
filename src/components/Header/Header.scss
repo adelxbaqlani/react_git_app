@@ -1,0 +1,126 @@
+.header {
+    font-size: 1.8rem;
+    min-width: 90%;
+    // background-color: brown;
+    height: 20vh;
+    display: flex;
+    .nav-bar {
+        width:100%;
+        
+        li{
+            display: inline-block;
+            margin-right: 10px;
+            padding: 2rem;
+        }
+    }
+}
+
+.menu {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 20;
+    &__line {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &.active {
+        & :nth-child(1) {
+            transform: translate(-12px, 9px) rotate(-45deg);
+        }
+        & :nth-child(2) {
+            //transform: rotatez(45deg);
+            opacity: 0;
+        }
+        & :nth-child(3) {
+            transform: translate(-12px, -9px) rotate(45deg);
+        }
+    }
+    & :nth-child(1) {
+        top: 14px;
+    }
+    & :nth-child(2) {
+        top: 23px;
+    }
+    & :nth-child(3) {
+        bottom: 14px;
+    }
+}
+
+.nav {
+    display: none;
+    height: 5rem;
+    width: 5rem;
+    background-color:#000;
+    border-radius: 50%;
+    position: absolute;
+    top: 1em;
+    right: 1rem;
+    z-index: 10;
+    transition: all 0.15s ease-in;
+    &.open {
+        border-radius: 0%;
+        background-color: aqua;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: 0.92);
+    }
+    &__item {
+        margin-bottom: 5rem;
+        animation-name: fadein;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        //padding: 2rem 1.5rem;
+        width: 20rem;
+        text-align: center;
+        background-color: rgba($color: #ffff, $alpha: 0.1);
+
+        &.has-reserved {
+            position: relative;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            color: white;
+            &::after {
+                content: '1';
+                display: block;
+                position: absolute;
+                top: -0.8rem;
+                left: -0.8rem;
+                width: 2.3rem;
+                height: 2.3rem;
+                border-radius: 50%;
+                background-color:red;
+            }
+        }
+        
+    }
+    &__list {
+        & a {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: #fff;
+            // background-color: rgba($color: #ffff, $alpha: 0.1);
+            padding: 2rem 1.5rem;
+        }
+        display: none;
+        &.show {
+            display: block;
+        }
+    }
+}

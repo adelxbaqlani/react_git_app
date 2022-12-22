@@ -1,0 +1,288 @@
+$primary-color :#f6ebe7;
+$white-color: #fff;
+$black-color :#000;
+$primary-text-color: rgb(71, 71, 71);
+
+
+
+.home_container {
+
+    
+    &_header {
+        padding: 2rem;
+        // background-color: $primary-color;
+        background: url("../../imgs/Heronew.webp") no-repeat;   
+        background-size: cover;
+        display: flex;
+        text-transform: capitalize;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 55rem;
+
+        &__text--primary {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        &__text--description {
+            margin-top: 4rem;
+            font-weight: 500;
+            font-size: 2.6rem;
+            width: 80%;
+            text-align: center;
+            text-transform: capitalize;
+            color: #fff;
+            word-spacing: 0.5rem;
+          
+        }
+        &__btns {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__btn--reserve {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem 4.5rem;
+            // background-color: #fff;
+            border: 1px solid white;
+            border-radius: 5px;       
+            font-size: 2.1rem;   
+            font-weight: 600;
+            a {
+                color: white;
+            }
+            &.has-reserved {
+                position: relative;
+                font-size: 1.4rem;
+                text-align: center;
+                font-weight: 600;
+                color: white;
+                &::after {
+                    content: '1';
+                    display: block;
+                    position: absolute;
+                    top: -0.8rem;
+                    left: -0.8rem;
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    border-radius: 50%;
+                    background-color:red;
+                }
+            }
+        }
+        &__btn--service {
+            // margin-top: 2rem;
+            padding: 1.5rem 4.5rem;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 5px;
+            // color: black;
+            font-weight: 600;
+            border: 1px solid #fff;
+            word-spacing: 5px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    // <-- info container styling -->
+    &_info {
+        font-size: 2rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #f6ebe7;
+        padding-top: 2rem;
+        &__item {
+
+            margin: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--heading {
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+
+            &--para {
+                font-size: 1.5rem;
+                color: rgb(71, 71, 71);
+                margin: 0.5rem;
+            }
+        }
+    }
+
+
+    // <-- service container styling -->
+    &_services {
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 35rem;
+
+        &__Title--primary {
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            margin-bottom: 4rem;
+            font-weight: 600;
+        }
+ 
+ 
+        &__description {
+
+        }
+    }
+
+    // <-- story container styling -->
+    &_story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f6ebe7;
+        padding: 1rem;
+        &__img {
+            background-image: url("../../imgs/img2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 45rem;
+            width: 35rem;
+            margin: 2rem 1rem;
+            border-radius: 0.3rem;
+        }
+        &__heading {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        &__para{
+            color: rgba($color: #000, $alpha: 0.65);
+            font-size: 1.5rem;
+            margin: 1rem;
+            font-weight: 600;
+            line-height: 3rem;
+            text-align: center;
+        }
+    }
+
+    // <-- shop container styling -->
+    &_shop {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+
+        &__heading {
+            height: 5rem;
+        }
+        &__card--item-1 {
+            & .card__img {
+                background-image: url("../../imgs/Shop1.webp");
+            }
+            
+        }
+        &__card--item-2 {
+            & .card__img {
+
+                background-image: url("../../imgs/Shop2.webp");
+
+            }
+        }
+        &__card--item-3 {
+            & .card__img{
+                background-image: url("../../imgs/Shop3.webp");
+            }
+        }
+        &__card--item-4 {
+            & .card__img{
+                background-image: url("../../imgs/Shop4.webp");
+            }
+        }
+
+    }
+
+
+    &_blog {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 122rem;
+        background-color: $primary-color;
+
+        &__title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 3rem 0;
+        }
+        &__post {
+           
+           
+        }
+    }
+   
+}
+.footer {
+    padding-top: 10px;
+    height: 50rem;
+     
+
+    // background-color: rgb(255, 0, 98);
+    // &__social--icons {
+    //     margin-top: 2rem;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     color: white;
+    //     text-transform: capitalize;
+    //     height: 20rem;
+    //     & .icon--insta {
+    //             // background-color: purple;
+    //             padding: 1rem;
+    //     }
+    //     & .icon--facebook {
+    //             background-color: green;
+    //             padding: 1rem;
+    //     }
+
+    // }
+   
+}
+.btn {
+    padding: 0.33rem 2rem;
+    border: 1.5px solid rgb(255, 255, 255);
+    // margin: 3rem 1rem 2rem 1rem;
+    margin: 1rem 0rem;
+    width: 60%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: width 0.5s;
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+    &--white {
+        background-color: $white-color;
+        color: rgb(27, 27, 27);
+    }
+    &--transparent {
+        color: $white-color;
+        &--blackText {
+            color: $black-color;
+            border: 1.5px solid rgb(0, 0, 0);
+        }
+    }
+    &--black {
+        color: $white-color;
+        background-color: $black-color;
+    }
+    &:hover {
+        width: 65%;
+    }
+}

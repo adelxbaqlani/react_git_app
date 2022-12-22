@@ -1,0 +1,35 @@
+.artist-picker {
+    margin-top: 5rem;
+    text-align: center;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        margin-top: 1rem;
+        &::before {
+            content: "";
+            height: 1px;
+            width: 80%;
+            background-color: rgb(71, 71, 71);
+            position: absolute;
+            top: -2rem;
+        }
+    }
+    background-color: #fff;
+    width: 100%;
+    &__title {
+        margin: 0 auto;
+        width: 3.5rem;
+    }
+    &__description {
+        // width: fit-content;
+        // margin-right: 3rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+}
+
+.artist-item__icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

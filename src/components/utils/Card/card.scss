@@ -1,0 +1,60 @@
+.card {
+    max-width: min-content;
+    padding: 4rem 2.5rem;
+    /* width: 80%; */
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: #f0f0f0;
+    position: relative;
+    font-size: 1.3rem;
+    color: #2b2a2a;
+    // box-shadow: -2px 2px 16px -1px rgba(51, 51, 51, 0.10);
+    box-shadow: -18px 3px 16px -5px rgba(0, 0, 0,  0.12);
+    border: #cccccc solid 1px;
+    margin-bottom: 3.5rem;
+    border-radius: 10px;
+    
+    &__rating {
+        
+         position: absolute;
+         top: 0rem;
+         right: 0rem;
+         font-size: 1.5rem;
+         background-color: rgba(128, 128, 128, 0.5);
+         border-radius: 5px;
+         padding: 0.1rem 1rem;
+         text-align: center;
+         color: rgb(71, 71, 71);
+    }
+    &__img {
+        
+        // height:65%;
+        // width: 65vw;
+        // background-image: url("../../imgs/shop1.webp");
+        // background-repeat: no-repeat;
+        // background-size: contain;
+
+
+        height: 65%;
+        width: 60vw;
+        flex: 1;
+        // background-image: url("../../imgs/shop1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 2.5rem;
+    }
+
+    &__product-name {
+       
+        text-align: center;
+        margin: 1rem;
+    }
+    &__product-price {
+        
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+}

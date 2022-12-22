@@ -1,0 +1,60 @@
+
+//<-- service container styling -->
+
+    .services__items {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    padding: 0rem 1rem;
+
+    &__item {
+         height: 10rem;
+         display: flex;
+        /* flex: 1; */
+         width: 8rem;
+         border-radius: 8px;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 1.5rem;
+         // font-weight: 600;
+         color: #474747;
+         text-transform: uppercase;
+        //  background-color: #91743e12;
+         border: 1px solid rgb(131, 130, 130);
+        &--img {
+        background-size: contain;
+        background-repeat: no-repeat;
+            // display: inline-block;
+         margin: 0.5rem;
+         height: 100%;
+         width: 70%;
+         &--1 {
+             background-image: url("../../imgs/Layer_1.png");
+         }
+         &--2 {
+             background-image: url("../../imgs/Layer_2.png");
+         }
+          &--3 {
+              background-image: url("../../imgs/Layer_3.png");
+          }
+          &--4 {
+              background-image: url("../../imgs/Layer_4.png");
+          }
+      }
+
+      &--title {
+
+      }
+      
+            }
+         
+
+        &__description {
+
+        }
+
+
+    }

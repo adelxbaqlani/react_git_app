@@ -1,0 +1,25 @@
+.date-picker {
+    margin-top: 5rem;
+    &__item-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        justify-content: space-around;
+        position: relative;
+        &::before {
+            content: "";
+            height: 1px;
+            width: 80%;
+            background-color: rgb(71, 71, 71);
+            position: absolute;
+            top: -3rem;
+            margin-top: 2rem;
+        }
+    }
+    &__title {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+}
